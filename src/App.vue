@@ -7,22 +7,16 @@
 
 <script>
 export default {
-  name: 'App',
-  mounted(){
-    this.$axios.get('/user')
-  .then(function (response) {
-    console.info(response);
-  })
-  .catch(function (error) {
-    console.info(error);
-  });
+  name: "App",
+  components: {},
+  mounted() {
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
