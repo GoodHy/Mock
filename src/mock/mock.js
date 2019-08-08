@@ -1,6 +1,6 @@
 const Mock = require('mockjs');
 const Random = Mock.Random;
-
+Random.cname()
 const produceData = function(opt){
     console.info('opt',opt);
     let articles = [];

@@ -8,7 +8,7 @@
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "e2e": "node test/e2e/runner.js",
-    "test": "npm run e2e",
+    "test": "./node_modules/.bin/nightwatch --env",
     "build": "node build/build.js"
   },
   "dependencies": {
@@ -17,6 +17,7 @@
     "crypto-js": "^3.1.9-1",
     "element-ui": "^2.11.1",
     "js-cookie": "^2.2.0",
+    "jsdom": "^15.1.1",
     "lodash": "^4.17.15",
     "numeral": "^2.0.6",
     "vue": "^2.5.2",
@@ -35,7 +36,7 @@
     "babel-preset-stage-2": "^6.22.0",
     "babel-register": "^6.22.0",
     "chalk": "^2.0.1",
-    "chromedriver": "^2.27.2",
+    "chromedriver": "^2.46.0",
     "copy-webpack-plugin": "^4.0.1",
     "cross-spawn": "^5.0.1",
     "css-loader": "^0.28.0",
