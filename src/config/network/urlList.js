@@ -6,27 +6,27 @@ import { apiDev, apiTest, apiProd, apiPre } from './config';
 
 //开发版公网IP-URL, 如果需要根据后端分支访问,需要在后面加上版本号
 export const devPublicUrl = {
-  // systemService: apiDev.authorizeService({ port: '7775' }),
-  // crmService: apiDev.crmService({ port: '7775', version: 'v1-0-0' }),
-  // modelService: apiDev.modelsService({ port: '7775' }),
-  // baseService: apiDev.baseService({ port: '7775', version: 'v2-11-0' }),
-  // authService: apiDev.portService({ port: '7775' }),
-  // erpService: apiDev.erpService({ port: '7775', version: 'v2-14-5' }),
-  // insuranService: apiDev.erpService({ port: '7775', version: 'v2-14-5' }),
-  // synergyService: apiDev.baseService({ port: '7775' }),
-  // scoreService: apiDev.scoreService({ port: '7775' }),
-  // boutiqueService: apiDev.boutiqueService({ port: '7775' }),
-  // statisticsService: apiDev.statisticsService({ port: '7775' }),
-  // insuranceService: apiDev.erpService({ port: 7775, version: 'v2-14-5' }),
-  // cmsService: apiDev.clientService({ port: '7775' }),
-  // activeService: 'http://devzuul.erp2.itsmycar.cn:7775/zuul/cms', //本地暂用测试地址
-  // exportService: 'http://devzuul.erp2.itsmycar.cn:7775/zuul/cms', //请于当前运行环境保持一致,此为单独导出的接口
-  // FinancialList: 'http://devzuul.erp2.itsmycar.cn:7775/zuul/erp', // 金融展板调试接口
-  // contryAdimin: 'http://devzuul.erp2.itsmycar.cn:77775/zuul/v2-11-0/base', // 区县管理
-  // lippoGroup: 'http://devzuul.erp2.itsmycar.cn:7775/zuul/cms', //助力夺宝服务
-  // unionService: 'http://devzuul.erp2.itsmycar.cn:7775/zuul/v1-0-0/union', // 联盟app
-  // __version__: ({ server, version }) => apiDev[server]({ version })
-    userService:'http://localhost:8080'
+  systemService: apiDev.authorizeService({ port: '7775' }),
+  crmService: apiDev.crmService({ port: '7775', version: 'v1-0-0' }),
+  modelService: apiDev.modelsService({ port: '7775' }),
+  baseService: apiDev.baseService({ port: '7775', version: 'v2-11-0' }),
+  authService: apiDev.portService({ port: '7775' }),
+  erpService: apiDev.erpService({ port: '7775', version: 'v2-14-5' }),
+  insuranService: apiDev.erpService({ port: '7775', version: 'v2-14-5' }),
+  synergyService: apiDev.baseService({ port: '7775' }),
+  scoreService: apiDev.scoreService({ port: '7775' }),
+  boutiqueService: apiDev.boutiqueService({ port: '7775' }),
+  statisticsService: apiDev.statisticsService({ port: '7775' }),
+  insuranceService: apiDev.erpService({ port: 7775, version: 'v2-14-5' }),
+  cmsService: apiDev.clientService({ port: '7775' }),
+  activeService: 'http://devzuul.erp2.itsmycar.cn:7775/zuul/cms', //本地暂用测试地址
+  exportService: 'http://devzuul.erp2.itsmycar.cn:7775/zuul/cms', //请于当前运行环境保持一致,此为单独导出的接口
+  FinancialList: 'http://devzuul.erp2.itsmycar.cn:7775/zuul/erp', // 金融展板调试接口
+  contryAdimin: 'http://devzuul.erp2.itsmycar.cn:77775/zuul/v2-11-0/base', // 区县管理
+  lippoGroup: 'http://devzuul.erp2.itsmycar.cn:7775/zuul/cms', //助力夺宝服务
+  unionService: 'http://devzuul.erp2.itsmycar.cn:7775/zuul/v1-0-0/union', // 联盟app
+  userService:'http://localhost:8081',
+  __version__: ({ server, version }) => apiDev[server]({ version })
 };
 
 //测试版公网IP-URL

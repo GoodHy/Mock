@@ -1,4 +1,4 @@
-import request from '../network/requestSystem';
+
 
 const ErrorHandler = (error, vm) => {
   console.log('捕获到全局错误 ==>', error);

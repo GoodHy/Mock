@@ -10,23 +10,23 @@ const environment = 'http_env';
  * 预发布版本 pre
  * 正式版本 prod
  ***/
-let env = 'dev';
-if (environment) env = environment;
 
+if (environment) env = environment;
+let env = 'dev';
 const devConfig = {
-  // isDev: false, //是否为调试模式(内部控制)
-  // printLog: true, //是否打印Log开关
-  // workFlow: true, //是否启用任务流
-  // systemID: '40288a486368a12101636bfc08e00001', //ERP测试系统ID
-  // tableEmptyTag: '--', //ERP表格空字符占位符
-  // enableRouteAuth: true, //是否启用路由权限控制
-  // enableOperationAuth: true, //是否启用操作权限控制
-  // redirect_uri: 'http://lottery.liritian.top/',
-  // socketUrl: 'ws://192.168.3.200:8402/sysMessage',
-  // statisticsSocketUrl: 'ws://192.168.3.200:9701/message',
-  // appid: 'dingoavwlbokwrk1ulvkoe',
-  // corpId: 'ding7d0358e5937f35a535c2f4657eb6378f',
-  // usePwdLogin: true,
+  isDev: false, //是否为调试模式(内部控制)
+  printLog: true, //是否打印Log开关
+  workFlow: true, //是否启用任务流
+  systemID: '40288a486368a12101636bfc08e00001', //ERP测试系统ID
+  tableEmptyTag: '--', //ERP表格空字符占位符
+  enableRouteAuth: true, //是否启用路由权限控制
+  enableOperationAuth: true, //是否启用操作权限控制
+  redirect_uri: 'http://lottery.liritian.top/',
+  socketUrl: 'ws://192.168.3.200:8402/sysMessage',
+  statisticsSocketUrl: 'ws://192.168.3.200:9701/message',
+  appid: 'dingoavwlbokwrk1ulvkoe',
+  corpId: 'ding7d0358e5937f35a535c2f4657eb6378f',
+  usePwdLogin: true,
   ...UrlList.devPublicUrl //根据不同环境加载不同URL组
 };
 
