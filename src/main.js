@@ -4,7 +4,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import 'babel-polyfill';
 import App from './App'
-import router from './router'
+import router from './router/index'
 import Loading from './components/YiMixins/Loading';
 import axios from 'axios';
 import ElementUI from 'element-ui'
