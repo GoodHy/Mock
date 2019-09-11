@@ -13,11 +13,14 @@ import ErrorHandler from './config/error/ErrorHandler';
 import ErrorDisplayer from './config/error/ErrorDisplayer';
 import './mock/index.js'
 import locale from 'element-ui/lib/locale/lang/en'
+import ayyy from 'ayyy';
 import store from './store/index'
-
+import hyvcolorpicker from 'hyvcolorpicker'
+Vue.use(hyvcolorpicker)
 Vue.config.productionTip = false
 Vue.prototype.$axios=axios;
 Vue.use(ElementUI, { locale });
+Vue.use(ayyy)
 Vue.use(Vuex);
 Vue.use(store);
 //加载全局Loading控制
